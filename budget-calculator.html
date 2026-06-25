@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Budget Calculator — 50/30/20 Rule for Take-Home Pay</title>
+<meta name="description" content="Free 50/30/20 budget calculator. Turn your monthly take-home pay into needs, wants and savings targets, then compare your actual spending. Works in any currency.">
+<link rel="canonical" href="https://saveslate.com/budget-calculator">
+<meta property="og:title" content="Budget Calculator — 50/30/20 Rule for Take-Home Pay">
+<meta property="og:description" content="Free 50/30/20 budget calculator. Turn your monthly take-home pay into needs, wants and savings targets, then compare your actual spending. Works in any currency.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saveslate.com/budget-calculator">
+<meta property="og:image" content="https://saveslate.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Budget Calculator — 50/30/20 Rule for Take-Home Pay">
+<meta name="twitter:description" content="Free 50/30/20 budget calculator. Turn your monthly take-home pay into needs, wants and savings targets, then compare your actual spending. Works in any currency.">
+<meta name="twitter:image" content="https://saveslate.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What counts as a need versus a want?", "acceptedAnswer": {"@type": "Answer", "text": "Needs are essentials you would struggle to live without \u2014 housing, basic food, utilities, transport to work and minimum debt payments. Wants are discretionary: dining out, subscriptions, travel and upgrades. When unsure, ask whether a tight month could do without it."}}, {"@type": "Question", "name": "Is take-home pay before or after tax?", "acceptedAnswer": {"@type": "Answer", "text": "After tax. Use the amount that actually lands in your account, since that is what you allocate. If you save into a pre-tax retirement account at work, you can count that separately in the savings bucket."}}, {"@type": "Question", "name": "What if my needs are more than 50%?", "acceptedAnswer": {"@type": "Answer", "text": "In high-cost areas that is common. Treat the percentages as targets to move toward, not pass/fail lines. Trimming wants and slowly raising income are the usual levers to bring needs back into balance."}}, {"@type": "Question", "name": "Is 20% savings enough?", "acceptedAnswer": {"@type": "Answer", "text": "It is a solid baseline. If you are aiming for early retirement or catching up, higher is better \u2014 the FIRE and Coast FIRE tools show what faster saving unlocks."}}]}, {"@context": "https://schema.org", "@type": "WebApplication", "name": "Budget Calculator \u2014 50/30/20 Rule for Take-Home Pay", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0"}, "description": "Free 50/30/20 budget calculator. Turn your monthly take-home pay into needs, wants and savings targets, then compare your actual spending. Works in any currency.", "url": "https://saveslate.com/budget-calculator"}]</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="brand"><span class="glyph" aria-hidden="true"></span>SaveSlate</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/compound-interest-calculator">Compound</a>
+<a href="/mortgage-calculator">Mortgage</a>
+<a href="/retirement-calculator">Retirement</a>
+<a href="/debt-payoff-calculator">Debt</a>
+<a href="/fire-calculator">FIRE</a>
+
+      <a href="/#all-tools">All tools</a>
+      <select class="currency-select control" aria-label="Currency" style="width:auto;padding:7px 30px 7px 12px;font-size:13px;"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="INR">INR</option><option value="JPY">JPY</option><option value="CAD">CAD</option><option value="AUD">AUD</option><option value="CHF">CHF</option><option value="CNY">CNY</option><option value="SGD">SGD</option><option value="AED">AED</option><option value="BRL">BRL</option><option value="ZAR">ZAR</option></select>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="tool-hero"><div class="wrap">
+<div class="crumb"><a href="/">SaveSlate</a> / Budget Calculator</div>
+<h1>Budget Calculator</h1><p>Split your take-home pay into needs, wants and savings with the 50/30/20 rule — then check it against what you really spend.</p>
+</div></section>
+<section><div class="wrap"><div class="calc">
+<div class="panel"><h2 class="panel-title">Your numbers</h2><div class="field">
+<label for="bg_income">Monthly take-home pay<span class="hint">after tax</span></label>
+<div class="input-affix"><span class="affix" data-currency-symbol>$</span>
+<input type="number" id="bg_income" value="4000" min="0" inputmode="decimal"></div><input type="range" id="bg_income_r" min="0" max="100000" step="100" value="4000"></div><div class="field" style="margin-top:8px"><label>Compare your actual spending<span class="hint">optional</span></label></div><div class="field">
+<label for="bg_needs">You spend on needs<span class="hint">rent, food, bills</span></label>
+<div class="input-affix"><span class="affix" data-currency-symbol>$</span>
+<input type="number" id="bg_needs" value="0" min="0" inputmode="decimal"></div></div><div class="field">
+<label for="bg_wants">You spend on wants<span class="hint">dining, fun, extras</span></label>
+<div class="input-affix"><span class="affix" data-currency-symbol>$</span>
+<input type="number" id="bg_wants" value="0" min="0" inputmode="decimal"></div></div><div class="field">
+<label for="bg_save">You save / invest<span class="hint"></span></label>
+<div class="input-affix"><span class="affix" data-currency-symbol>$</span>
+<input type="number" id="bg_save" value="0" min="0" inputmode="decimal"></div></div></div>
+<div class="panel sticky"><h2 class="panel-title">Result</h2>
+<div class="result-figure"><div class="rlabel">Recommended monthly savings</div>
+<div class="rvalue pos" id="bg_savetarget">—</div><div class="rsub">The 50/30/20 rule puts 20% of take-home pay toward saving and debt.</div></div>
+<div class="compbar" id="bg_bar"><span style="width:50%;background:#47514e"></span><span style="width:30%;background:#b0822b"></span><span style="width:20%;background:#0e7c5a"></span></div>
+<div class="stat-rows">
+<div class="stat-row"><span class="k"><span class="dot" style="background:#47514e"></span>Needs — 50%</span><span class="v" id="bg_needs_t">—</span></div>
+<div class="stat-row"><span class="k"><span class="dot" style="background:#b0822b"></span>Wants — 30%</span><span class="v" id="bg_wants_t">—</span></div>
+<div class="stat-row"><span class="k"><span class="dot" style="background:#0e7c5a"></span>Savings &amp; debt — 20%</span><span class="v green" id="bg_save_t">—</span></div></div>
+<div id="bg_compare" style="margin-top:22px"></div>
+<div class="note">50/30/20 is a starting framework, not a strict rule. High living costs can push needs above 50%; aggressive savers go well beyond 20%. Adjust the categories to fit your life.</div></div>
+</div></div></section>
+<section class="section"><div class="wrap"><div class="prose">
+<p>The 50/30/20 rule is the simplest way to give every unit of income a job: half to needs, a third to wants, a fifth to your future. This calculator turns your take-home pay into target amounts, and — if you enter what you actually spend — shows where you are drifting.</p>
+<h3>Needs, wants and the 20% that builds wealth</h3>
+<p>Needs are the essentials you cannot skip: housing, utilities, groceries, transport, minimum debt payments. Wants are everything that makes life enjoyable but optional. The final 20% is the engine of progress — it pays down debt faster and feeds your savings and investments. Protecting that slice is what moves you forward.</p>
+<h2>Questions, answered</h2><div class="faq"><details><summary>What counts as a need versus a want?</summary><p>Needs are essentials you would struggle to live without — housing, basic food, utilities, transport to work and minimum debt payments. Wants are discretionary: dining out, subscriptions, travel and upgrades. When unsure, ask whether a tight month could do without it.</p></details><details><summary>Is take-home pay before or after tax?</summary><p>After tax. Use the amount that actually lands in your account, since that is what you allocate. If you save into a pre-tax retirement account at work, you can count that separately in the savings bucket.</p></details><details><summary>What if my needs are more than 50%?</summary><p>In high-cost areas that is common. Treat the percentages as targets to move toward, not pass/fail lines. Trimming wants and slowly raising income are the usual levers to bring needs back into balance.</p></details><details><summary>Is 20% savings enough?</summary><p>It is a solid baseline. If you are aiming for early retirement or catching up, higher is better — the FIRE and Coast FIRE tools show what faster saving unlocks.</p></details></div>
+<h2 style="margin-top:40px">Keep going</h2><div class="related"><a href="/debt-payoff-calculator"><div class="t">Debt Payoff Calculator</div><div class="d">Snowball vs avalanche, side by side.</div></a>
+<a href="/compound-interest-calculator"><div class="t">Compound Interest</div><div class="d">See how contributions and time stack up.</div></a>
+<a href="/retirement-calculator"><div class="t">Retirement Calculator</div><div class="d">Project your nest egg and retirement income.</div></a>
+</div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="brand"><span class="glyph" aria-hidden="true"></span>SaveSlate</a>
+        <p class="tag">Precision tools for everyday money decisions. Free, fast, and private — every number is computed in your browser.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <ul><li><a href="/mortgage-calculator">Mortgage Calculator</a></li><li><a href="/compound-interest-calculator">Compound Interest Calculator</a></li><li><a href="/loan-calculator">Loan / EMI Calculator</a></li><li><a href="/retirement-calculator">Retirement Calculator</a></li><li><a href="/investment-calculator">Investment Calculator</a></li><li><a href="/budget-calculator">Budget Calculator</a></li><li><a href="/debt-payoff-calculator">Debt Payoff Calculator</a></li></ul>
+      </div>
+      <div>
+        <h4>Independence</h4>
+        <ul><li><a href="/fire-calculator">FIRE Calculator</a></li><li><a href="/coast-fire-calculator">Coast FIRE Calculator</a></li><li><a href="/#all-tools">All calculators</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> SaveSlate. Built for clarity, not advice.</span>
+      <span>No tracking · No accounts · Calculations stay on your device</span>
+    </div>
+    <p class="disclaimer">SaveSlate provides general educational estimates only and is not financial, tax, or investment advice. Projections rely on the assumptions you enter and do not guarantee future results. Verify important decisions with a licensed professional.</p>
+  </div>
+</footer>
+<script src="/assets/finance.js"></script>
+<script src="/assets/ui.js"></script>
+<script>
+
+var C={ink:'#47514e',gold:'#b0822b',green:'#0e7c5a',clay:'#bc4a30'};
+function v(id){return Ledger.parseNum(document.getElementById(id).value);}
+function set(id,t){var e=document.getElementById(id);if(e)e.textContent=t;}
+function recalc(){
+  var inc=v('bg_income'); var fc=Ledger.fmtCurrency;
+  var b=Finance.budget5030(inc);
+  set('bg_savetarget',fc(b.savings));
+  set('bg_needs_t',fc(b.needs)); set('bg_wants_t',fc(b.wants)); set('bg_save_t',fc(b.savings));
+  var an=v('bg_needs'),aw=v('bg_wants'),as=v('bg_save'),tot=an+aw+as;
+  var box=document.getElementById('bg_compare');
+  if(tot<=0||inc<=0){box.innerHTML=''; return;}
+  var pn=an/inc*100,pw=aw/inc*100,ps=as/inc*100,left=inc-tot;
+  var html='<div class="compbar">'+
+    '<span style="width:'+Math.min(100,pn)+'%;background:'+C.ink+'"></span>'+
+    '<span style="width:'+Math.min(100,pw)+'%;background:'+C.gold+'"></span>'+
+    '<span style="width:'+Math.min(100,ps)+'%;background:'+C.green+'"></span></div>'+
+    '<div class="stat-rows" style="margin-top:6px">'+
+    '<div class="stat-row"><span class="k">Your needs</span><span class="v">'+pn.toFixed(0)+'%  ·  '+fc(an)+'</span></div>'+
+    '<div class="stat-row"><span class="k">Your wants</span><span class="v">'+pw.toFixed(0)+'%  ·  '+fc(aw)+'</span></div>'+
+    '<div class="stat-row"><span class="k">Your savings</span><span class="v green">'+ps.toFixed(0)+'%  ·  '+fc(as)+'</span></div>'+
+    '<div class="stat-row"><span class="k">Unallocated</span><span class="v '+(left<0?'clay':'')+'">'+fc(left)+'</span></div></div>';
+  var msg, cls;
+  if(left<-0.5){cls='warn';msg='You are allocating '+fc(-left)+' more than your take-home pay. Trim a category to balance the month.';}
+  else if(ps>=20){cls='good';msg='Your savings rate is '+ps.toFixed(0)+'% — at or above the 20% target. Nicely done.';}
+  else {var gap=b.savings-as; cls='warn'; msg='You are saving '+ps.toFixed(0)+'%. Redirecting about '+fc(gap)+' from wants would hit the 20% target.';}
+  html+='<div class="callout '+cls+'" style="margin-top:16px">'+msg+'</div>';
+  box.innerHTML=html;
+}
+['bg_income','bg_needs','bg_wants','bg_save'].forEach(function(id){
+  var inp=document.getElementById(id),rng=document.getElementById(id+'_r');
+  if(rng)Ledger.bindRange(rng,inp,recalc); else inp.addEventListener('input',recalc);
+});
+Ledger.onCurrencyChange(recalc); recalc();
+</script>
+</body></html>
