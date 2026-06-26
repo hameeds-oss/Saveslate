@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retirement Calculator — Project Your Nest Egg and Income</title>
+<meta name="description" content="Free retirement calculator. Project your savings to retirement and the income it can support, with contribution step-ups and an adjustable withdrawal rate. Any currency.">
+<link rel="canonical" href="https://saveslate.com/retirement-calculator">
+<meta property="og:title" content="Retirement Calculator — Project Your Nest Egg and Income">
+<meta property="og:description" content="Free retirement calculator. Project your savings to retirement and the income it can support, with contribution step-ups and an adjustable withdrawal rate. Any currency.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saveslate.com/retirement-calculator">
+<meta property="og:image" content="https://saveslate.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Retirement Calculator — Project Your Nest Egg and Income">
+<meta name="twitter:description" content="Free retirement calculator. Project your savings to retirement and the income it can support, with contribution step-ups and an adjustable withdrawal rate. Any currency.">
+<meta name="twitter:image" content="https://saveslate.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the 4% rule?", "acceptedAnswer": {"@type": "Answer", "text": "It is a guideline suggesting you can withdraw about 4% of your portfolio in the first year of retirement, then adjust for inflation, with a reasonable chance the money lasts around 30 years. It is a rule of thumb, not a guarantee, and depends on markets and your time horizon."}}, {"@type": "Question", "name": "Should I use a return before or after inflation?", "acceptedAnswer": {"@type": "Answer", "text": "Either, as long as you are consistent. Using a nominal return shows future currency; subtracting inflation from the return shows today's purchasing power. The income estimate will be in whichever terms you choose."}}, {"@type": "Question", "name": "Does it include my pension or social security?", "acceptedAnswer": {"@type": "Answer", "text": "No. It models personal savings only. Any state pension or social security would be additional income on top of the figure shown."}}, {"@type": "Question", "name": "Is this a guarantee of my retirement income?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is an educational projection from your assumptions. Real returns vary, and taxes and the order of market returns matter. A licensed advisor can build a plan for your circumstances."}}]}, {"@context": "https://schema.org", "@type": "WebApplication", "name": "Retirement Calculator \u2014 Project Your Nest Egg and Income", "applicationCategory": "FinanceApplication", "operatingSystem": "Any", "offers": {"@type": "Offer", "price": "0"}, "description": "Free retirement calculator. Project your savings to retirement and the income it can support, with contribution step-ups and an adjustable withdrawal rate. Any currency.", "url": "https://saveslate.com/retirement-calculator"}]</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="brand"><span class="glyph" aria-hidden="true"></span>SaveSlate</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/compound-interest-calculator">Compound</a>
+<a href="/mortgage-calculator">Mortgage</a>
+<a href="/retirement-calculator" class="active">Retirement</a>
+<a href="/debt-payoff-calculator">Debt</a>
+<a href="/fire-calculator">FIRE</a>
+
+      <a href="/learn">Learn</a>
+      <a href="/#all-tools">All tools</a>
+      <select class="currency-select control" aria-label="Currency" style="width:auto;padding:7px 30px 7px 12px;font-size:13px;"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="INR">INR</option><option value="JPY">JPY</option><option value="CAD">CAD</option><option value="AUD">AUD</option><option value="CHF">CHF</option><option value="CNY">CNY</option><option value="SGD">SGD</option><option value="AED">AED</option><option value="BRL">BRL</option><option value="ZAR">ZAR</option></select>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="tool-hero"><div class="wrap">
+<div class="crumb"><a href="/">SaveSlate</a> / Retirement Calculator</div>
+<h1>Retirement Calculator</h1><p>Project the pot you'll build by retirement and the income it could pay — with contribution raises and an adjustable withdrawal rate.</p>
+</div></section>
+<section><div class="wrap"><div class="calc">
+<div class="panel"><h2 class="panel-title">Your numbers</h2><div class="field">
+<label for="r_age">Current age<span class="hint"></span></label>
+<div class="input-affix"><input type="number" id="r_age" value="30" min="18" max="75" step="1" inputmode="decimal"></div><input type="range" id="r_age_r" min="18" max="75" step="1" value="30"></div><div class="field">
+<label for="r_retire">Retirement age<span class="hint"></span></label>
+<div class="input-affix"><input type="number" id="r_retire" value="65" min="30" max="80" step="1" inputmode="decimal"></div><input type="range" id="r_retire_r" min="30" max="80" step="1" value="65"></div><div class="field">
+<label for="r_savings">Current savings<span class="hint"></span></label>
+<div class="input-affix"><span class="affix" data-currency-symbol>$</span>
+<input type="number" id="r_savings" value="50000" min="0" inputmode="decimal"></div><input type="range" id="r_savings_r" min="0" max="5000000" step="1000" value="50000"></div><div class="field">
+<label for="r_monthly">Monthly contribution<span class="hint"></span></label>
+<div class="input-affix"><span class="affix" data-currency-symbol>$</span>
+<input type="number" id="r_monthly" value="800" min="0" inputmode="decimal"></div><input type="range" id="r_monthly_r" min="0" max="50000" step="50" value="800"></div><div class="field">
+<label for="r_return">Expected annual return<span class="hint">before retirement</span></label>
+<div class="input-affix"><input type="number" id="r_return" value="7" step="0.1" inputmode="decimal">
+<span class="affix suffix">%</span></div><input type="range" id="r_return_r" min="0" max="15" step="0.1" value="7"></div><div class="field">
+<label for="r_step">Yearly contribution increase<span class="hint">optional</span></label>
+<div class="input-affix"><input type="number" id="r_step" value="2" step="0.5" inputmode="decimal">
+<span class="affix suffix">%</span></div><input type="range" id="r_step_r" min="0" max="15" step="0.5" value="2"></div><div class="field">
+<label for="r_wr">Withdrawal rate<span class="hint">income in retirement</span></label>
+<div class="input-affix"><input type="number" id="r_wr" value="4" step="0.1" inputmode="decimal">
+<span class="affix suffix">%</span></div><input type="range" id="r_wr_r" min="2" max="8" step="0.1" value="4"></div></div>
+<div class="panel sticky"><h2 class="panel-title">Result</h2>
+<div class="result-figure"><div class="rlabel">Projected nest egg at retirement</div>
+<div class="rvalue pos" id="r_nest">—</div><div class="rsub" id="r_sub">—</div></div>
+<div class="stat-rows">
+<div class="stat-row"><span class="k">Years until retirement</span><span class="v" id="r_years">—</span></div>
+<div class="stat-row"><span class="k"><span class="dot" style="background:#47514e"></span>Total contributed</span><span class="v" id="r_contrib">—</span></div>
+<div class="stat-row"><span class="k"><span class="dot" style="background:#0e7c5a"></span>Investment growth</span><span class="v green" id="r_growth">—</span></div>
+<div class="stat-row"><span class="k">Annual retirement income</span><span class="v" id="r_inc">—</span></div>
+<div class="stat-row"><span class="k">Monthly retirement income</span><span class="v" id="r_minc">—</span></div></div>
+<div class="chart-wrap"><div id="r_chart"></div>
+<div class="chart-legend"><div class="li"><span class="sw" style="background:#0e7c5a"></span>Balance</div><div class="li"><span class="sw" style="background:#47514e"></span>Contributed</div></div></div>
+<div class="note">Retirement income applies your chosen withdrawal rate to the final balance — the 4% guideline is a common starting point. It does not model taxes, market sequence risk, or a depleting balance over a long retirement.</div></div>
+</div></div></section>
+<section class="section"><div class="wrap"><div class="prose">
+<p>This calculator projects the pot you could build by retirement, then estimates the yearly income it might support. It compounds your current savings and monthly contributions at your expected return, with an optional annual raise to your contributions.</p>
+<h3>From nest egg to income</h3>
+<p>The income figure uses a withdrawal rate — the share of your balance you draw each year. The widely cited 4% guideline aims to make a diversified portfolio last roughly three decades. A lower rate is more conservative; a higher rate spends faster. Treat the result as a planning anchor, not a promise.</p>
+<h3>Why starting age dominates</h3>
+<p>Move your current age down a few years and the nest egg grows out of proportion to the extra contributions, because those early dollars compound the longest. The growth line in the chart shows how much of the final balance comes from returns rather than deposits.</p>
+<h2>Questions, answered</h2><div class="faq"><details><summary>What is the 4% rule?</summary><p>It is a guideline suggesting you can withdraw about 4% of your portfolio in the first year of retirement, then adjust for inflation, with a reasonable chance the money lasts around 30 years. It is a rule of thumb, not a guarantee, and depends on markets and your time horizon.</p></details><details><summary>Should I use a return before or after inflation?</summary><p>Either, as long as you are consistent. Using a nominal return shows future currency; subtracting inflation from the return shows today's purchasing power. The income estimate will be in whichever terms you choose.</p></details><details><summary>Does it include my pension or social security?</summary><p>No. It models personal savings only. Any state pension or social security would be additional income on top of the figure shown.</p></details><details><summary>Is this a guarantee of my retirement income?</summary><p>No. It is an educational projection from your assumptions. Real returns vary, and taxes and the order of market returns matter. A licensed advisor can build a plan for your circumstances.</p></details></div>
+<h2 style="margin-top:40px">Keep going</h2><div class="related"><a href="/compound-interest-calculator"><div class="t">Compound Interest</div><div class="d">See how contributions and time stack up.</div></a>
+<a href="/investment-calculator"><div class="t">Investment Calculator</div><div class="d">Lump sum plus monthly investing, with step-ups.</div></a>
+<a href="/coast-fire-calculator"><div class="t">Coast FIRE Calculator</div><div class="d">See if your investments can coast to retirement.</div></a>
+</div>
+</div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="brand"><span class="glyph" aria-hidden="true"></span>SaveSlate</a>
+        <p class="tag">Precision tools for everyday money decisions. Free, fast, and private — every number is computed in your browser.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <ul><li><a href="/mortgage-calculator">Mortgage Calculator</a></li><li><a href="/compound-interest-calculator">Compound Interest Calculator</a></li><li><a href="/loan-calculator">Loan / EMI Calculator</a></li><li><a href="/retirement-calculator">Retirement Calculator</a></li><li><a href="/investment-calculator">Investment Calculator</a></li><li><a href="/budget-calculator">Budget Calculator</a></li><li><a href="/debt-payoff-calculator">Debt Payoff Calculator</a></li></ul>
+      </div>
+      <div>
+        <h4>Independence</h4>
+        <ul><li><a href="/fire-calculator">FIRE Calculator</a></li><li><a href="/coast-fire-calculator">Coast FIRE Calculator</a></li><li><a href="/learn">Guides &amp; articles</a></li><li><a href="/#all-tools">All calculators</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> SaveSlate. Built for clarity, not advice.</span>
+      <span>No tracking · No accounts · Calculations stay on your device</span>
+    </div>
+    <p class="disclaimer">SaveSlate provides general educational estimates only and is not financial, tax, or investment advice. Projections rely on the assumptions you enter and do not guarantee future results. Verify important decisions with a licensed professional.</p>
+  </div>
+</footer>
+<script src="/assets/finance.js"></script>
+<script src="/assets/ui.js"></script>
+<script>
+
+var C={green:'#0e7c5a',ink:'#47514e'};
+function v(id){return Ledger.parseNum(document.getElementById(id).value);}
+function set(id,t){var e=document.getElementById(id);if(e)e.textContent=t;}
+function recalc(){
+  var age=v('r_age'),retire=v('r_retire');
+  if(retire<=age)retire=age+1;
+  var r=Finance.retirement({currentAge:age,retireAge:retire,currentSavings:v('r_savings'),monthlyContribution:v('r_monthly'),preReturnPct:v('r_return'),contributionIncreasePct:v('r_step'),withdrawalRate:v('r_wr')});
+  var fc=Ledger.fmtCurrency;
+  set('r_nest',fc(r.nestEgg));
+  set('r_sub','could pay about '+fc(r.monthlyIncome)+' a month');
+  set('r_years',r.years+' years'); set('r_contrib',fc(r.totalContributed));
+  set('r_growth',fc(r.totalGrowth)); set('r_inc',fc(r.annualIncome)); set('r_minc',fc(r.monthlyIncome));
+  var bal=[],con=[],labels=[];
+  r.series.forEach(function(p){bal.push(p.balance);con.push(p.contributed);labels.push(''+(age+p.year));});
+  Ledger.drawChart(document.getElementById('r_chart'),[{values:bal,color:C.green},{values:con,color:C.ink,fill:false}],{xLabels:labels});
+}
+['r_age','r_retire','r_savings','r_monthly','r_return','r_step','r_wr'].forEach(function(id){
+  var inp=document.getElementById(id),rng=document.getElementById(id+'_r');
+  if(rng)Ledger.bindRange(rng,inp,recalc); else inp.addEventListener('input',recalc);
+});
+Ledger.onCurrencyChange(recalc); recalc();
+</script>
+</body></html>
