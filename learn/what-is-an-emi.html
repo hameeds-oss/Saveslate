@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Is an EMI and How Is It Calculated? | SaveSlate</title>
+<meta name="description" content="An EMI is a fixed monthly loan payment that splits between interest and principal. See the formula, a worked example, and why a longer term costs more total interest.">
+<link rel="canonical" href="https://saveslate.com/learn/what-is-an-emi">
+<meta property="og:title" content="What Is an EMI and How Is It Calculated? | SaveSlate">
+<meta property="og:description" content="An EMI is a fixed monthly loan payment that splits between interest and principal. See the formula, a worked example, and why a longer term costs more total interest.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://saveslate.com/learn/what-is-an-emi">
+<meta property="og:image" content="https://saveslate.com/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Is an EMI and How Is It Calculated? | SaveSlate">
+<meta name="twitter:description" content="An EMI is a fixed monthly loan payment that splits between interest and principal. See the formula, a worked example, and why a longer term costs more total interest.">
+<meta name="twitter:image" content="https://saveslate.com/assets/og-image.png">
+<meta name="robots" content="index,follow">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/styles.css">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "What Is an EMI and How Is It Calculated?", "description": "An EMI is a fixed monthly loan payment that splits between interest and principal. See the formula, a worked example, and why a longer term costs more total interest.", "datePublished": "2026-06-26", "dateModified": "2026-06-26", "author": {"@type": "Organization", "name": "The SaveSlate Team"}, "publisher": {"@type": "Organization", "name": "SaveSlate"}, "mainEntityOfPage": {"@type": "WebPage", "@id": "https://saveslate.com/learn/what-is-an-emi"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does EMI stand for?", "acceptedAnswer": {"@type": "Answer", "text": "Equated Monthly Instalment. It is a fixed payment made every month that fully repays a loan over its agreed term, with each payment covering that month's interest first and reducing the principal with the rest."}}, {"@type": "Question", "name": "Is the EMI the same every month?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for a standard fixed-rate loan the total EMI stays constant. What changes is the split inside it: early payments are mostly interest, while later payments are mostly principal as the outstanding balance falls."}}, {"@type": "Question", "name": "Does a longer loan tenure save money?", "acceptedAnswer": {"@type": "Answer", "text": "It lowers the monthly payment but increases the total interest you pay, because you are borrowing for longer. A shorter term costs more per month but less overall. Compare a few terms before deciding."}}, {"@type": "Question", "name": "What is included in an EMI?", "acceptedAnswer": {"@type": "Answer", "text": "Just principal and interest. Processing or origination fees and any prepayment penalties are charged separately and are not part of the EMI calculation, so account for them when comparing loan offers."}}]}]</script>
+
+<style>
+.article-hero{padding:40px 0 6px}
+.article-hero h1{font-size:clamp(30px,4.6vw,46px);max-width:22ch}
+.article-meta{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:14px;color:var(--muted);font-family:var(--font-mono);flex-wrap:wrap}
+.article-meta .dot{width:4px;height:4px;border-radius:50%;background:var(--muted)}
+.article-body{max-width:72ch;margin:0 auto}
+.article-body .lead-p{font-size:19px;color:var(--ink-soft);line-height:1.6;margin:22px 0 8px}
+.tool-cta{background:var(--green-ink);color:#dfeee7;border-radius:var(--radius);padding:22px 24px;margin:26px 0;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.tool-cta .t{font-family:var(--font-display);font-weight:600;font-size:18px;color:#fff;margin:0 0 4px}
+.tool-cta .d{font-size:14px;color:#9cbab0;margin:0}
+.tool-cta a.btn{background:var(--green);color:#fff;white-space:nowrap}
+.tool-cta a.btn:hover{background:#0c9268}
+.split-bar{display:flex;height:38px;border-radius:9px;overflow:hidden;margin:18px 0 6px;font-family:var(--font-mono);font-size:13px;color:#fff}
+.split-bar span{display:flex;align-items:center;justify-content:center;text-align:center}
+.key-table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}
+.key-table th,.key-table td{padding:11px 14px;text-align:left;border-bottom:1px solid var(--line)}
+.key-table th{font-family:var(--font-mono);font-size:12.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:500}
+.key-table td.num,.key-table th.num{text-align:right;font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+.formula{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-sm);padding:16px 18px;margin:18px 0;font-family:var(--font-mono);font-size:15px;color:var(--ink);text-align:center;overflow-x:auto}
+.author-box{display:flex;gap:16px;align-items:flex-start;border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin:34px 0 8px;background:var(--paper)}
+.author-box .av{width:46px;height:46px;border-radius:12px;background:var(--green-ink);flex:none;position:relative}
+.author-box .av::before{content:"";position:absolute;left:11px;right:11px;top:16px;height:2px;border-radius:2px;background:var(--green-tint);opacity:.6}
+.author-box .av::after{content:"";position:absolute;left:11px;top:23px;width:9px;height:2px;border-radius:2px;background:var(--gold)}
+.author-box .nm{font-weight:600;font-size:15px;color:var(--ink)}
+.author-box .bio{font-size:13.5px;color:var(--ink-soft);margin-top:4px;line-height:1.55}
+</style>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a href="/" class="brand"><span class="glyph" aria-hidden="true"></span>SaveSlate</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span></button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/compound-interest-calculator">Compound</a>
+<a href="/mortgage-calculator">Mortgage</a>
+<a href="/retirement-calculator">Retirement</a>
+<a href="/debt-payoff-calculator">Debt</a>
+<a href="/fire-calculator">FIRE</a>
+
+      <a href="/learn" class="active">Learn</a>
+      <a href="/#all-tools">All tools</a>
+      <select class="currency-select control" aria-label="Currency" style="width:auto;padding:7px 30px 7px 12px;font-size:13px;"><option value="USD">USD</option><option value="EUR">EUR</option><option value="GBP">GBP</option><option value="INR">INR</option><option value="JPY">JPY</option><option value="CAD">CAD</option><option value="AUD">AUD</option><option value="CHF">CHF</option><option value="CNY">CNY</option><option value="SGD">SGD</option><option value="AED">AED</option><option value="BRL">BRL</option><option value="ZAR">ZAR</option></select>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="article-hero"><div class="wrap">
+<div class="crumb"><a href="/">SaveSlate</a> / <a href="/learn">Learn</a> / Loans</div>
+<h1>What Is an EMI and How Is It Calculated?</h1>
+<div class="article-meta"><span>The SaveSlate Team</span><span class="dot"></span><span>Updated June 2026</span><span class="dot"></span><span>6 min read</span></div>
+</div></section>
+<section><div class="wrap"><div class="article-body prose">
+<p class="lead-p">EMI stands for <strong>Equated Monthly Instalment</strong> — a fixed amount you pay every month that, over the life of a loan, repays it completely. The payment stays the same each month, but what is happening inside it shifts: early payments are mostly interest, and later ones are mostly principal. Understanding that split is the key to understanding the true cost of borrowing.</p>
+
+<div class="tool-cta"><div><p class="t">Work out the EMI on any loan</p><p class="d">Free and private — get your monthly payment, total interest and a full schedule.</p></div><a class="btn" href="/loan-calculator">Open the Loan / EMI Calculator →</a></div>
+
+<h2>What an EMI actually is</h2>
+<p>When you take a loan — a car loan, personal loan, home loan — the lender spreads repayment into equal monthly instalments. Each EMI does two jobs at once:</p>
+<ul>
+<li><strong>Pays the month's interest</strong> on the balance you still owe, and</li>
+<li><strong>Repays a slice of the principal</strong> — the original amount you borrowed.</li>
+</ul>
+<p>Because interest is charged on the remaining balance, and that balance is largest at the start, your first payments are dominated by interest. As the balance shrinks, more of each fixed payment goes to principal. The total you pay stays identical every month; only the mix changes.</p>
+
+<h2>How an EMI is calculated</h2>
+<p>The EMI comes from a standard formula:</p>
+<div class="formula">EMI = P × r × (1 + r)<sup>n</sup> ÷ [ (1 + r)<sup>n</sup> − 1 ]</div>
+<p>Where <strong>P</strong> is the loan amount (principal), <strong>r</strong> is the monthly interest rate (the annual rate divided by 12), and <strong>n</strong> is the number of monthly payments (years × 12). You never need to compute this by hand — the <a href="/loan-calculator">Loan Calculator</a> does it instantly — but it helps to see that three things drive the payment: how much you borrow, the rate, and the term.</p>
+
+<h2>A worked example</h2>
+<p>Borrow $25,000 at 9% annual interest over 5 years:</p>
+<table class="key-table">
+<thead><tr><th>Figure</th><th class="num">Amount</th></tr></thead>
+<tbody>
+<tr><td>Monthly EMI</td><td class="num">$518.96</td></tr>
+<tr><td>Total interest paid</td><td class="num">$6,138</td></tr>
+<tr><td>Total repaid</td><td class="num">$31,138</td></tr>
+</tbody>
+</table>
+<p>So the $25,000 loan actually costs about $31,138 over five years — the extra $6,138 is the price of borrowing. That gap is what the EMI hides behind a comfortable fixed payment, and it is why the term you choose matters so much.</p>
+
+<h2>Why a longer term can cost more</h2>
+<p>It is tempting to stretch a loan over more years to lower the monthly payment. But a longer term means you borrow for longer, so you pay more total interest. Take the same $25,000 at 9%:</p>
+<table class="key-table">
+<thead><tr><th>Term</th><th class="num">Monthly EMI</th><th class="num">Total interest</th></tr></thead>
+<tbody>
+<tr><td>5 years</td><td class="num">$518.96</td><td class="num">$6,138</td></tr>
+<tr><td>7 years</td><td class="num">$402.23</td><td class="num">$8,787</td></tr>
+</tbody>
+</table>
+<p>Stretching to seven years drops the monthly payment by about $117, but costs roughly $2,650 more in interest overall. Lower payment, higher total — that is the trade-off to weigh.</p>
+
+<div class="tool-cta"><div><p class="t">Work out the EMI on any loan</p><p class="d">Free and private — get your monthly payment, total interest and a full schedule.</p></div><a class="btn" href="/loan-calculator">Open the Loan / EMI Calculator →</a></div>
+
+<h2>What affects your EMI</h2>
+<ul>
+<li><strong>Loan amount.</strong> Borrow more, pay more — directly proportional.</li>
+<li><strong>Interest rate.</strong> Even a small rate difference adds up over years; shop around.</li>
+<li><strong>Term.</strong> Longer lowers the monthly payment but raises total interest, and vice versa.</li>
+</ul>
+<p>One thing the EMI usually does <em>not</em> include: fees. Processing or origination charges, and any prepayment penalties, sit outside the EMI math, so factor them in separately when comparing offers.</p>
+
+<h2>Tips to pay less</h2>
+<ul>
+<li><strong>Choose the shortest term you can comfortably afford</strong> — it is the cheapest path overall.</li>
+<li><strong>Make occasional extra payments</strong> toward principal where the loan allows it; each one removes all the future interest that amount would have generated.</li>
+<li><strong>Compare the rate, not just the EMI.</strong> A lower monthly payment from a longer term can quietly cost you more.</li>
+</ul>
+
+<h2>The bottom line</h2>
+<p>An EMI is a fixed monthly payment that fully repays a loan over its term, splitting each payment between interest and principal. The amount you borrow, the rate, and the term decide it — and the term decides how much total interest you hand over. Before signing, run the loan through a calculator so you see the real lifetime cost, not just the comfortable monthly number.</p>
+
+<div class="tool-cta"><div><p class="t">Work out the EMI on any loan</p><p class="d">Free and private — get your monthly payment, total interest and a full schedule.</p></div><a class="btn" href="/loan-calculator">Open the Loan / EMI Calculator →</a></div>
+<h2>Frequently asked questions</h2><div class="faq"><details><summary>What does EMI stand for?</summary><p>Equated Monthly Instalment. It is a fixed payment made every month that fully repays a loan over its agreed term, with each payment covering that month's interest first and reducing the principal with the rest.</p></details><details><summary>Is the EMI the same every month?</summary><p>Yes, for a standard fixed-rate loan the total EMI stays constant. What changes is the split inside it: early payments are mostly interest, while later payments are mostly principal as the outstanding balance falls.</p></details><details><summary>Does a longer loan tenure save money?</summary><p>It lowers the monthly payment but increases the total interest you pay, because you are borrowing for longer. A shorter term costs more per month but less overall. Compare a few terms before deciding.</p></details><details><summary>What is included in an EMI?</summary><p>Just principal and interest. Processing or origination fees and any prepayment penalties are charged separately and are not part of the EMI calculation, so account for them when comparing loan offers.</p></details></div><div class="author-box"><div class="av" aria-hidden="true"></div><div><div class="nm">The SaveSlate Team</div><div class="bio">SaveSlate's editorial team writes practical, jargon-free guides to personal finance and financial independence, researched from first principles. Our articles are educational and are not personalized financial advice.</div></div></div><h2 style="margin-top:40px">Run the numbers</h2><div class="related"><a href="/loan-calculator"><div class="t">Loan / EMI Calculator</div><div class="d">Get the payment and full schedule for any loan.</div></a><a href="/mortgage-calculator"><div class="t">Mortgage Calculator</div><div class="d">The same math, plus taxes and insurance.</div></a><a href="/debt-payoff-calculator"><div class="t">Debt Payoff Calculator</div><div class="d">Clear multiple debts in the fastest order.</div></a></div></div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a href="/" class="brand"><span class="glyph" aria-hidden="true"></span>SaveSlate</a>
+        <p class="tag">Precision tools for everyday money decisions. Free, fast, and private — every number is computed in your browser.</p>
+      </div>
+      <div>
+        <h4>Popular tools</h4>
+        <ul><li><a href="/mortgage-calculator">Mortgage Calculator</a></li><li><a href="/compound-interest-calculator">Compound Interest Calculator</a></li><li><a href="/loan-calculator">Loan / EMI Calculator</a></li><li><a href="/retirement-calculator">Retirement Calculator</a></li><li><a href="/investment-calculator">Investment Calculator</a></li><li><a href="/budget-calculator">Budget Calculator</a></li><li><a href="/debt-payoff-calculator">Debt Payoff Calculator</a></li></ul>
+      </div>
+      <div>
+        <h4>Independence</h4>
+        <ul><li><a href="/fire-calculator">FIRE Calculator</a></li><li><a href="/coast-fire-calculator">Coast FIRE Calculator</a></li><li><a href="/learn">Guides &amp; articles</a></li><li><a href="/#all-tools">All calculators</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> SaveSlate. Built for clarity, not advice.</span>
+      <span>No tracking · No accounts · Calculations stay on your device</span>
+    </div>
+    <p class="disclaimer">SaveSlate provides general educational estimates only and is not financial, tax, or investment advice. Projections rely on the assumptions you enter and do not guarantee future results. Verify important decisions with a licensed professional.</p>
+  </div>
+</footer>
+<script src="/assets/finance.js"></script>
+<script src="/assets/ui.js"></script>
+</body></html>
